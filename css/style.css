@@ -7,7 +7,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    background-color: cornflowerblue;
+    background-image: url(../img/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
 }
 
 #main {
@@ -15,12 +15,51 @@ body {
     background-image: url(../img/space.png);
     height: 600px;
     width: 600px;
+    color: white;
+
 }
 
 #player {
     position: relative;
     height: 60px;
-    width: 70px;
+    width: 60px;
     left: 20px;
     top: 250px;
+}
+
+.fire {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.enemy {
+    height: 60px;
+    width: 70px;
+    position: relative;
+}
+
+.enemy-transition {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-enemy {
+    height: 60px;
+    width: 70px;
+    position: relative;
+    opacity: 0;
+}
+
+#how {
+    position: relative;
+    left: 9rem;
+    top: 0px;
+}
+
+#start {
+    position: relative;
+    top: 9rem;
+    left: 15rem;
+    cursor: pointer;
 }
